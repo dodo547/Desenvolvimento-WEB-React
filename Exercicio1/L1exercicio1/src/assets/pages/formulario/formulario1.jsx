@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { Botao } from "../../../components/Button/button";
+import { Escrever } from "../../../components/Input/input";
 
-const Forms = () => {
+export const Forms = () => {
   const [lista, setLista] = useState([]);
 
   const handleSubmit = (evento) => {
@@ -19,11 +21,12 @@ const Forms = () => {
     <>
       <h1>Adicione um texto para ser exibido no console</h1>
       <form onSubmit={handleSubmit}>
-        <input type="text" name="texto" />
-        <button type="submit">Enviar</button>
+        <Escrever type="text" name="texto" />
+        <br />
+        <br />
+        <Botao type="submit"></Botao>
       </form>
     </>
   );
 };
 
-export default Forms;

@@ -4,13 +4,12 @@ export function Botao({ valor, onclick, title }) {
   return (
     <>
       <button
+        type="submit"
         title={title}
         id="button"
         className={styles.botaoc}
-        onClick={onclick}
-        
-      >
-        {valor}
+        onClick={onclick}>      
+        Enviar
       </button>
     </>
   );

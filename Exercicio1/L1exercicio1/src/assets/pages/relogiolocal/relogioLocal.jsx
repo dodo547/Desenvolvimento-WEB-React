@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 
-const Relogio = () => {
+export const Relogio = () => {
   const [horario, setHorario] = useState(new Date());
 
   useEffect(() => {
@@ -24,4 +24,3 @@ const Relogio = () => {
   );
 };
 
-export default Relogio;
